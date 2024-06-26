@@ -13,8 +13,8 @@ Select * from infectious_cases;
 ```sql
 Create table countries (
 id int auto_increment primary key,
-country_name varchar(45) unique not null, 
-country_code varchar(8) unique not null
+country_name varchar(45) not null,
+country_code varchar(8) not null
 );
 
 Insert into countries (country_code, country_name)
